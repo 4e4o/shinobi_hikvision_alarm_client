@@ -9,12 +9,12 @@
             "channels":[
                 {
                     "id":0,
-                    "comment": "ch0"
+                    "comment": "ch0",
                     "mapped_id": 2
                 },
                 {
                     "id":1,
-                    "comment": "ch1"
+                    "comment": "ch1",
                     "mapped_id": 5
                 }
             ]
