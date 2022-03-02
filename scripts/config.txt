@@ -1,5 +1,5 @@
 {
-    "servers":[
+    "config":[
         {
             "comment": "kkkkkk",
             "ip":"192.168.1.2",
@@ -10,15 +10,17 @@
                 {
                     "id":0,
                     "comment": "ch0"
+                    "mapped_id": 2
                 },
                 {
                     "id":1,
                     "comment": "ch1"
+                    "mapped_id": 5
                 }
             ]
         },
         {
-            "enabled":true,
+            "enabled":false,
             "ip":"192.168.1.3",
             "port":8000,
             "login":"admin",
