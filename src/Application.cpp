@@ -25,9 +25,7 @@ bool Application::start(TConfigItems& c) {
 void Application::onNewClient(AlarmClient* client) {
     using TMD = AlarmClient::TMotion;
 
-    client->onMotion.connect([this, client](const TMD& md, const size_t& size) {
-        const std::string server = client->config()->getComment().empty() ?
-                    client->config()->getIp() : client->config()->getComment();
+    client->onMotion.connect([this](const TMD& md, const size_t& size) {
         for (size_t i = 0 ; i < size ; i++) {
             ChannelConfigEx* c = static_cast<ChannelConfigEx*>(md[i]);
 
