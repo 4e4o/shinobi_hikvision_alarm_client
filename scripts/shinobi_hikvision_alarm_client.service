@@ -1,0 +1,13 @@
+[Unit]
+Description=new hikvision to shinobi motion detector provider
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/bash -c '/usr/local/bin/hikvision_alarm_client /usr/local/etc/hikvision_alarm_client/config.cfg'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
