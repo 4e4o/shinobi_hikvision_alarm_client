@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=root
 Group=root
-ExecStart=/usr/bin/bash -c '/usr/local/bin/hikvision_alarm_client /usr/local/etc/hikvision_alarm_client/config.cfg'
+ExecStart=/usr/bin/bash -c '/usr/local/bin/shinobi_hikvision_alarm_client /usr/local/etc/shinobi_hikvision_alarm_client/config.txt'
 Restart=always
 
 [Install]
