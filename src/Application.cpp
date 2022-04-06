@@ -33,7 +33,7 @@ void Application::onNewClient(AlarmClient* client) {
                 continue;
 
             m_strand->post([this, c] {
-                m_queue->send(c->mappedId());
+                m_queue->try_send(c->mappedId());
             });
         }
     });
